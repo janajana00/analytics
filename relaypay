@@ -1,0 +1,40 @@
+<!-- Combined Google Tag and Tag Manager Scripts -->
+<script async defer loading="lazy" src="https://www.googletagmanager.com/gtag/js?id=G-M3VKP7CFGC"></script>
+<script defer>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-M3VKP7CFGC');
+
+  // Google Tag Manager script
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NFDXD4H');
+
+// Hotjar Tracking Code"
+  (function(h,o,t,j,a,r){
+    h.hj = h.hj || function () {(h.hj.q = h.hj.q || []).push(arguments);};
+    h._hjSettings = { hjid: 3165071, hjsv: 6 };
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');
+    r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    r.setAttribute('loading', 'lazy');
+    a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- Lazy Loaded HubSpot Forms script -->
+<script defer loading="lazy" charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+
+<!-- Exclude staging domain from crawling in Google -->
+<script>
+  if (location.hostname.indexOf("dev.relaypay.io") !== -1 || location.hostname.indexOf("stg.relaypay.io") !== -1) {
+    document.write('<meta name="robots" content="noindex">');
+  }
+</script>
